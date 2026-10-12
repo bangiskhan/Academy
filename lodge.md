@@ -112,6 +112,7 @@ My first reaction when I saw this was "damn!!! I be Mr Robot joor 😂" until i 
 
 <img width="709" height="130" alt="image" src="https://github.com/user-attachments/assets/3694a521-e88d-498d-8761-0a19d70ee107" />
 
+
 And boom!!! 💥. That was it. 
 
 
