@@ -1,7 +1,7 @@
-###### IP: 209.38.170.206
-###### NAME: THE LODGE
-###### DIFFICULTY: INTERMEDIATE(What they said)
-###### GOAL: FIND AND SUBMIT FLAG
+##### IP: 209.38.170.206
+##### NAME: THE LODGE
+##### DIFFICULTY: INTERMEDIATE(What they said)
+##### GOAL: FIND AND SUBMIT FLAG
 
 ### SCANNING
 
@@ -101,17 +101,16 @@ Nice one Mr Clifford. I see what you did there 😂👏. Onto the next sha, sear
 
 Now we will start with the main file. That is `bash_aliases` to see what is there
 
-![[Pasted image 20250516184820.png]]
-
+<img width="1033" height="363" alt="image" src="https://github.com/user-attachments/assets/ce03eee5-b394-4ceb-8ee6-953f80dc3844" />
 
 Nothing was found there so we checked the `bashrc` file because it can also be used to set aliases. Upon checking that, we got another hint again to know what to do next.
 To cut the short story long, we sha found a flag and it was hidden.
 
-![[Pasted image 20250516185020.png]]
+<img width="1036" height="561" alt="image" src="https://github.com/user-attachments/assets/26b55cda-3a54-47c0-a67d-22a634ec763a" />
 
 My first reaction when I saw this was "damn!!! I be Mr Robot joor 😂" until i tried to decrypt it and it was giving me something I can't read or understand. Then i noticed there is a space in between the cup(something arsenal don't have) and the strings of character looking like base 64. I decided to add the first set of strings that was seen earlier.
 
-![[Pasted image 20261012084333.png]]
+<img width="709" height="130" alt="image" src="https://github.com/user-attachments/assets/3694a521-e88d-498d-8761-0a19d70ee107" />
 
 And boom!!! 💥. That was it. 
 
