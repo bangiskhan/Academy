@@ -1,6 +1,6 @@
 ###### IP: 209.38.170.206
 ###### NAME: THE LODGE
-###### DIFFICULTY: INTERMEDIATE
+###### DIFFICULTY: INTERMEDIATE(What they said)
 ###### GOAL: FIND AND SUBMIT FLAG
 
 ### SCANNING
@@ -34,20 +34,20 @@ Nmap done: 1 IP address (1 host up) scanned in 83.83 seconds
 From the above scan, we can see ftp is opened and we also have ssh opened. Another thing that looks interesting is http and port 631. Not to overwhelm ourselves, we will start by enumerating ports one by one starting from FTP as it might contain information that can lead us on.
 
 ### ENUMERATING FTP
+<img width="1920" height="789" alt="image" src="https://github.com/user-attachments/assets/1c0ef22f-d2af-48af-8330-1bd322a4ecc5" />
 
-![[Pasted image 20250516145843.png]]
 Upon enumerating FTP, we saw a number of files which looked interesting. Don't get too excited sha coz not all that gold is glitter abi how dem dey talk am 💀😂. Shaa make we check wetin dey there
 
 Ladies and gentlemen, the files we got from the ftp told us to play with port 22.
 
-![[Pasted image 20250516164546.png]]
+<img width="1920" height="1053" alt="image" src="https://github.com/user-attachments/assets/2c4cfac3-f92f-4b22-a76a-a7e4097d6c68" />
 
 So we will do just that and see how we can brute-force for a valid credential. We will be using hydra for this with the syntax;
 
 `hydra -L username.txt -P password.txt ssh://<ip>`
 
-![[Pasted image 20250516165046.png]]
-
+<img width="1920" height="273" alt="image" src="https://github.com/user-attachments/assets/74243a4b-59e4-41a6-aadb-046487ad120a" />
+4
 Easy day. Now we log in and find our flag.
 
 ### IN THE SERVER
@@ -88,11 +88,11 @@ Good luck, cyberwarrior. 🫡
 
 First things first, we check hidden files to see what we can find any interesting thing there before we check the alias whatever. 
 
-![[Pasted image 20250516171710.png]]
+<img width="882" height="900" alt="image" src="https://github.com/user-attachments/assets/9c9e28a2-8c2b-41d9-9adf-d05c8c1a82e8" />
 
 The first part looks sweet, so we will keep it and save it and then if you look at it well, it the pattern is enctypted+something== which could mean the first part is the beginning of our flag. We also got a note about backups(could be rabbit hole).
 
-![[Pasted image 20250516171907.png]]
+<img width="1369" height="260" alt="image" src="https://github.com/user-attachments/assets/60540ee6-4a8d-4bf6-99eb-6107e8b5c877" />
 
 Nice one Mr Clifford. I see what you did there 😂👏. Onto the next sha, searching through our bash files starting from the .bash_aliases it'self.
 
